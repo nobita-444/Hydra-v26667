@@ -4,7 +4,7 @@ const bitlyToken = 'ee891aaa3d51db956a8e1c0bdc116cf2e7df839d';
 
 module.exports = {
 config : {
-  name: "bit.ly",
+  name: "bitly",
   version: "1.0.0",
   author: "blake Cyphrus",
 longDescription: {

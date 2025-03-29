@@ -3,7 +3,7 @@ const srod = require('srod-v2');
 
 module.exports = {
   config: {
-    name: 'advice2',
+    name: 'advicebn',
     version: '1.0',
     author: 'AceGun',
     countDown: 5,

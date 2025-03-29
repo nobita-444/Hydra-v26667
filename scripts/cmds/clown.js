@@ -35,7 +35,7 @@ module.exports = {
       api.sendMessage(message, event.threadID, event.messageID);
     } catch (err) {
       console.error(err);
-      api.sendMessage("please mention or reply to someone", event.threadID, event.messageID);
+      api.sendMessage("kive mention dibe na ??", event.threadID, event.messageID);
     }
   }
 };

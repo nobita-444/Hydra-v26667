@@ -20,7 +20,7 @@ module.exports = {
 
     onStart: async function ({ message, event, args }) {
         const mention = Object.keys(event.mentions);
-        if (mention.length == 0) return message.reply("Please mention someone");
+        if (mention.length == 0) return message.reply("kire vai mention dili na je???");
         else {
             const one = event.senderID, two = mention[0];
             bal(one, two).then(ptth => { message.reply({ body: "👋😹 move your butt", attachment: fs.createReadStream(ptth) }) })
@@ -36,7 +36,7 @@ async function bal(one, two) {
     avone.circle()
     let avtwo = await jimp.read(`https://graph.facebook.com/${two}/picture?width=512&height=512&access_token=6628568379%7Cc1e620fa708a1d5696fb991c1bde5662`)
     avtwo.circle()
-    let pth = "butt.png"
+    let pth = "./cache/butt.png"
     let img = await jimp.read("https://api.misfitsdev.xyz/anime/buttslap.jpeg")
 
     img.resize(720, 405).composite(avone.resize(90, 90), 368, 34).composite(avtwo.resize(90, 90), 190, 225);

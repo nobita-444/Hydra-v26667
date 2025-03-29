@@ -9,7 +9,7 @@ module.exports = {
         countDown: 5,
         role: 0,
         shortDescription: {
-            en: "Generate high-quality anime image based on tag [NSFW Available]",
+            en: "Generate high-quality anime images based on tags [NSFW Available]",
         },
         longDescription: {
             en: "This command generates a high-quality anime image based on user input tags.",
@@ -28,34 +28,45 @@ module.exports = {
         ];
 
         const tag = args[0];
-
-        if (!availableTags.includes(tag)) {
+        if (!tag) {
             return message.reply(
-                `Invalid Tag: ${tag} ⚠️\nPlease use: maid, waifu, marin-kitagawa, mori-calliope, raiden-shogun, oppai, selfies, uniform.\n\nNSFW: ass, hentai, milf, oral, paizuri, ecchi, ero.`
+                "❌ | Please specify a tag!\n\nAvailable Tags:\n\n✨ SFW: maid, waifu, marin-kitagawa, mori-calliope, raiden-shogun, oppai, selfies, uniform\n🔞 NSFW: ass, hentai, milf, oral, paizuri, ecchi, ero."
+            );
+        }
+
+        if (!availableTags.includes(tag.toLowerCase())) {
+            return message.reply(
+                `⚠️ | Invalid Tag: ${tag}\n\nAvailable Tags:\n\n✨ SFW: maid, waifu, marin-kitagawa, mori-calliope, raiden-shogun, oppai, selfies, uniform\n🔞 NSFW: ass, hentai, milf, oral, paizuri, ecchi, ero.`
             );
         }
 
         try {
             const response = await fetch(`https://api.waifu.im/search/?included_tags=${tag}`);
-
             if (response.status !== 200) {
-                return message.reply("Failed to get image.");
+                return message.reply("❌ | Failed to retrieve the image. Please try again.");
             }
 
             const data = await response.json();
             const image = data.images[0];
 
+            if (!image) {
+                return message.reply("⚠️ | No image found for the given tag.");
+            }
+
             const imageResponse = await fetch(image.url);
             const buffer = await imageResponse.buffer();
 
-            fs.writeFileSync(`${tag}_anime.jpg`, buffer);
+            const filePath = `${tag}_anime.jpg`;
+            fs.writeFileSync(filePath, buffer);
 
-            message.reply({
-                body: `How is she? 😌\nImage Tag: ${tag} 😌🥵`,
-                attachment: fs.createReadStream(`${tag}_anime.jpg`)
-            }, () => fs.unlinkSync(`${tag}_anime.jpg`));
+            await message.reply({
+                body: `\n┏━━━━━━💭━━━━━━┓\n┃ 😌 𝐇𝐨𝐰 𝐢𝐬 𝐬𝐡𝐞?\n┃ 🏷 𝐈𝐦𝐚𝐠𝐞 𝐓𝐚𝐠: ${tag} 😌🥵\n┗━━━━━━━━━━━━━━━┛`,
+                attachment: fs.createReadStream(filePath)
+            });
+
+            fs.unlinkSync(filePath);
         } catch (error) {
-            message.reply("An error occurred while fetching the image.");
+            message.reply("❌ | An error occurred while fetching the image.");
         }
     }
 };

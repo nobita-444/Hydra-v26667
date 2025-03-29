@@ -3,14 +3,14 @@ const axios = require('axios');
 module.exports = {
 	config: {
 		name: "berojgar",
-		aliases: [],
+		aliases: ["topmsg"],
 		version: "1.0",
 		author: "kshitiz",
 		countDown: 5,
 		role: 0,
 		shortDescription: "Get the top 15 users by message count in the current chat",
 		longDescription: "Get the top 15 users by message count in the current chat",
-		category: "𝗙𝗨𝗡",
+		category: "fun",
 		guide: "{p}{n}",
 	},
 	onStart: async function ({ api, event }) {

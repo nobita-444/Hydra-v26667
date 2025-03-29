@@ -16,7 +16,7 @@ module.exports = {
 		category: "games",
 		guide: {
 			vi: "",
-			en: "choose | Loid"
+			en: "choose | xrotick"
 		}
 	},
   

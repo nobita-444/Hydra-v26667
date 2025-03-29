@@ -21,8 +21,7 @@ const fs = require("fs");
          const axios = require('axios'); 
          const request = require('request'); 
          const fs = require("fs"); 
-          if (args.length == 0) return api.sendMessage(`You can use:\n?box emoji [icon]\n\n?box name [box name to change]\n\n?box image [rep any image that needs to be set as box image]\n\n? box admin [tag] => it will give qtv to the person tagged\n\n?box info => All information of the group ! 
- `, event.threadID, event.messageID);   
+          if (args.length == 0) return api.sendMessage(`You can use:\n?box emoji [icon]\n\n?box name [box name to change]\n\n?box image [rep any image that needs to be set as box image]\n\n? box admin [tag] => it will give qtv to the person tagged\n\n?box info => All information of the group ! `, event.threadID, event.messageID);   
          if (args[0] == "name") { 
  var content = args.join(" "); 
  var c = content.slice(4, 99) || event.messageReply.body; 

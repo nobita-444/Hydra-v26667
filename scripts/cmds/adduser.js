@@ -34,15 +34,23 @@ module.exports = {
 			cannotAddUser: "Bot bị chặn tính năng hoặc người dùng này chặn người lạ thêm vào nhóm"
 		},
 		en: {
-			alreadyInGroup: "Already in group",
-			successAdd: "- Successfully added %1 members to the group",
-			failedAdd: "- Failed to add %1 members to the group",
-			approve: "- Added %1 members to the approval list",
-			invalidLink: "Please enter a valid facebook link",
-			cannotGetUid: "Cannot get uid of this user",
-			linkNotExist: "This profile url does not exist",
-			cannotAddUser: "Bot is blocked or this user blocked strangers from adding to the group"
-		}
+			alreadyInGroup: "\n┏━━━━━━━━━━━━━━🔄━━━━━━━━━━━━━━┓\n┃ ⚠️ **𝐀𝐥𝐫𝐞𝐚𝐝𝐲 𝐢𝐧 𝐆𝐫𝐨𝐮𝐩:** The member is already part of the group.\n┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛",
+			
+			successAdd: "\n┏━━━━━━━━━━━━━━✅━━━━━━━━━━━━━━┓\n┃ 🎉 **𝐒𝐮𝐜𝐜𝐞𝐬𝐬:** Successfully added **%1** members to the group.\n┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛",
+			
+			failedAdd: "\n┏━━━━━━━━━━━━━━❌━━━━━━━━━━━━━━┓\n┃ 🚫 **𝐅𝐚𝐢𝐥𝐞𝐝:** Could not add **%1** members to the group.\n┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛",
+			
+			approve: "\n┏━━━━━━━━━━━━━━🟢━━━━━━━━━━━━━━┓\n┃ ✅ **𝐀𝐩𝐩𝐫𝐨𝐯𝐞𝐝:** Added **%1** members to the approval list.\n┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛",
+			
+			invalidLink: "\n┏━━━━━━━━━━━━━━🌐━━━━━━━━━━━━━━┓\n┃ 🚫 **𝐈𝐧𝐯𝐚𝐥𝐢𝐝 𝐋𝐢𝐧𝐤:** Please enter a valid **Facebook link**.\n┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛",
+			
+			cannotGetUid: "\n┏━━━━━━━━━━━━━━🆔━━━━━━━━━━━━━━┓\n┃ ❌ **𝐄𝐫𝐫𝐨𝐫:** Cannot retrieve the **𝐮𝐬𝐞𝐫 𝐈𝐃 (𝐮𝐢𝐝)** for this user.\n┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛",
+			
+			linkNotExist: "\n┏━━━━━━━━━━━━━━🔗━━━━━━━━━━━━━━┓\n┃ 🚫 **𝐔𝐧𝐚𝐯𝐚𝐢𝐥𝐚𝐛𝐥𝐞 𝐏𝐫𝐨𝐟𝐢𝐥𝐞:** This profile URL does not exist.\n┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛",
+			
+			cannotAddUser: "\n┏━━━━━━━━━━━━━━🚷━━━━━━━━━━━━━━┓\n┃ ❌ **𝐀𝐝𝐝 𝐅𝐚𝐢𝐥𝐞𝐝:** Bot is blocked or the user has restricted group invites.\n┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛"
+		      }
+		      
 	},
 
 	onStart: async function ({ message, api, event, args, threadsData, getLang }) {

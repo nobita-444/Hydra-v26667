@@ -12,9 +12,10 @@ module.exports = {
 			needPermission: "Bot cần quyền quản trị viên để kick thành viên bị ban"
 		},
 		en: {
-			warn: "Member %1 has been warned 3 times before and has been banned from the chat box\n- Name: %1\n- Uid: %2\n- To unban, please use the \"%3warn unban <uid>\" command (with uid is the uid of the person you want to unban)",
-			needPermission: "Bot needs administrator permission to kick banned members"
-		}
+			warn: "\n┏━━━━━━━━━━━━━━⚠️━━━━━━━━━━━━━━┓\n┃ 🚫 **𝐖𝐚𝐫𝐧𝐢𝐧𝐠:** Member %1 has been warned 3 times and has been **𝐛𝐚𝐧𝐧𝐞𝐝** from the chat box.\n┃ 📝 **𝐍𝐚𝐦𝐞:** %1\n┃ 🆔 **𝐔𝐢𝐝:** %2\n┃ 💡 **𝐓𝐨 𝐮𝐧𝐛𝐚𝐧:** Use the command:\n┃ \"%3warn unban <uid>\" (replace `<uid>` with the person’s ID)\n┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛",
+    
+			needPermission: "\n┏━━━━━━━━━━━━━━🔐━━━━━━━━━━━━━━┓\n┃ ❌ **𝐏𝐞𝐫𝐦𝐢𝐬𝐬𝐢𝐨𝐧 𝐄𝐫𝐫𝐨𝐫:** Bot needs **𝐚𝐝𝐦𝐢𝐧𝐢𝐬𝐭𝐫𝐚𝐭𝐨𝐫 𝐩𝐞𝐫𝐦𝐢𝐬𝐬𝐢𝐨𝐧** to kick banned members.\n┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛"
+		      }
 	},
 
 	onStart: async ({ threadsData, message, event, api, client, getLang }) => {

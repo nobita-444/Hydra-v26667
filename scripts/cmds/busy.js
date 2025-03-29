@@ -35,13 +35,19 @@ module.exports = {
 			alreadyOnWithReason: "Hiện tại người dùng %1 đang bận với lý do: %2"
 		},
 		en: {
-			turnedOff: "✅ | Do not disturb mode has been turned off",
-			turnedOn: "✅ | Do not disturb mode has been turned on",
-			turnedOnWithReason: "✅ | Do not disturb mode has been turned on with reason: %1",
-			turnedOnWithoutReason: "✅ | Do not disturb mode has been turned on",
-			alreadyOn: "User %1 is currently busy",
-			alreadyOnWithReason: "User %1 is currently busy with reason: %2"
-		}
+			turnedOff: "\n┏━━✅━━┓\n┃ 🚫 | DND mode OFF\n┗━━━━━━┛",
+		      
+			turnedOn: "\n┏━━✅━━┓\n┃ 🟢 | DND mode ON\n┗━━━━━━┛",
+		      
+			turnedOnWithReason: "\n┏━━✅━━┓\n┃ 🟢 | DND mode ON\n┃ ✍️ Reason: %1\n┗━━━━━━┛",
+		      
+			turnedOnWithoutReason: "\n┏━━✅━━┓\n┃ 🟢 | DND mode ON\n┗━━━━━━┛",
+		      
+			alreadyOn: "\n┏━━⚠️━━┓\n┃ ⛔ | %1 is busy\n┗━━━━━━┛",
+		      
+			alreadyOnWithReason: "\n┏━━⚠️━━┓\n┃ ⛔ | %1 is busy\n┃ ✍️ Reason: %2\n┗━━━━━━┛"
+		      }
+		      
 	},
 
 	onStart: async function ({ args, message, event, getLang, usersData }) {

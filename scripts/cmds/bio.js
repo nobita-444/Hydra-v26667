@@ -13,7 +13,7 @@ module.exports = {
       vi: " ",
       en: "change bot bio ",
     },
-    category: "owner",
+    category: "admin-tools",
     guide: {
       en: "{pn} (text)",
     },

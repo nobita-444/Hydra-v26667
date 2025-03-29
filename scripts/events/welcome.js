@@ -26,15 +26,17 @@ module.exports = {
       session2: "noon",
       session3: "afternoon",
       session4: "evening",
-      welcomeMessage: "Thank you for inviting me to the group!\nBot prefix: %1\nTo view the list of commands, please enter: %1help",
+      welcomeMessage: `⫷\n●▬▬▬▬▬๑⇩⇩๑▬▬▬▬▬●\n[⚜️] 𝘽𝙤𝙩 𝙊𝙬𝙣𝙚𝙧:- 𝙓𝙧𝙤𝙩𝙞𝙘𝙠 [⚜️]\n[⚜️] 1-𝘿𝙤𝙣𝙩 𝙎𝙥𝙖𝙢 𝙏𝙝𝙚 𝘽𝙤𝙩\n[⚜️] 𝘿𝙤𝙣𝙩 𝙆𝙞𝙘𝙠 𝘼𝙣𝙙 𝙍𝙚-𝘼𝙙𝙙 𝙏𝙝𝙚 𝘽𝙤𝙩\n[⚜️] 𝙏𝙤 𝙎𝙚𝙚 𝘾𝙤𝙢𝙢𝙖𝙣𝙙𝙨 𝘼𝙫𝙖𝙞𝙡𝙖𝙗𝙡𝙚 𝙏𝙮𝙥𝙚 [ /help ] \n 𝙏𝙝𝙞𝙨 𝘽𝙤𝙩 𝙄𝙨 𝙀𝙙𝙞𝙩𝙞𝙣𝙜 𝘽𝙮 𝙓𝙧𝙤𝙩𝙞𝙘𝙠\n●▬▬▬▬▬๑⇧⇧๑▬▬▬▬▬●\n❛━━･❪ 𝑷𝒓𝒆𝒇𝒊𝒙 [ / ]❫･━━❜\n[⚜️] 𝙄𝙛 𝙔𝙤𝙪 𝙃𝙖𝙫𝙚 𝘼𝙣𝙮 𝙌𝙪𝙚𝙨𝙩𝙞𝙤𝙣 𝙊𝙧 𝙉𝙚𝙚𝙙 𝙃𝙚𝙡𝙥 𝘾𝙤𝙣𝙩𝙖𝙘𝙩 𝘽𝙤𝙩 𝘼𝙙𝙢𝙞𝙣: https://www.facebook.com/protick.mrc\n[⚜️] 𝗤𝗧𝗩 𝗰𝗮𝗻 𝘂𝘀𝗲 [ /𝗵𝗲𝗹𝗽 ] 𝗿𝘂𝗹𝗲 𝘁𝗼 𝘀𝗲𝗲 𝗽𝗲𝗼𝗽𝗹𝗲'𝘀 𝗱𝗶𝗿𝗲𝗰𝘁𝗶𝗼𝗻 𝗮𝗻𝗱 𝘀𝗲𝘁 𝗯𝗼𝘅 𝗿𝘂𝗹𝗲𝘀\n[⚜️] 𝗠𝗲𝗺𝗯𝗲𝗿𝘀 𝘂𝘀𝗲 [ /𝗿𝘂𝗹𝗲 ] 𝘁𝗼 𝘃𝗶𝗲𝘄 𝘁𝗵𝗲𝗶𝗿 𝗯𝗼𝘅 𝗿𝘂𝗹𝗲𝘀\n◆━━━━━━━━━━━━━◆\n[⚜️] 𝐓𝐡𝐢𝐬 𝐛𝐨𝐭 𝐦𝐚𝐝𝐞 𝐛𝐲 𝙓𝙧𝙤𝙩𝙞𝙘𝙠. 𝐓𝐡𝐚𝐧𝐤 𝐲𝐨𝐮 𝐟𝐨𝐫 𝐮𝐬𝐢𝐧𝐠\n[⚜️] 𝙰𝚍𝚖𝚒𝚗: Protick`,
       multiple1: "you",
       multiple2: "you guys",
-      defaultWelcomeMessage: `×º°”˜{session}˜”°º×\n✨𝗛𝗜 & 𝗪𝗘𝗟𝗖𝗢𝗠𝗘✨ 
-✶⊶⊷⊶⊷❍⊶⊷⊶⊷✶\n\n
-》【{userName}】 × 𝚒𝚗 𝚝𝚘 𝙾𝚞𝚛 𝗙𝚊𝚖𝚒𝚕𝚕𝚢𝚜 ♡\n
-》𝙳𝚘 𝙰𝚜 𝚞𝚛 𝗛𝚘𝚖𝚎 𝚊𝚗𝚍 𝗘𝚗𝚓𝚘𝚢 𝚞𝚛 𝚍𝚊𝚢 𝚊𝚝 \n『🌊{boxName}🌊』\n\n
-✶⊶⊷⊶⊷❍⊶⊷⊶⊷✶\n
-『Hydra』{multiple} 🌸😊`
+      defaultWelcomeMessage: `▂▃▅▆ 𝐖𝐞𝐥𝐜𝐨𝐦𝐞...▆▅▃▂\n
+⫸ 𝙎𝙪𝙘𝙘𝙚𝙨𝙨𝙛𝙪𝙡... ⫷\n
+●▬▬▬▬▬๑⇩⇩๑▬▬▬▬▬●\n
+[⚜️] 𝙃𝙚𝙡𝙡𝙤. ${userName} 👋\n
+[⚜️] 𝙒𝙚𝙡𝙘𝙤𝙢𝙚 ${multiple} 𝙩𝙤 𝙩𝙝𝙚 𝙘𝙝𝙖𝙩 𝙜𝙧𝙤𝙪𝙥: 『 ${boxName} 』\n
+[⚜️] 𝙃𝙖𝙫𝙚 𝙖 𝙣𝙞𝙘𝙚 ${session} ✨\n
+●▬▬▬▬▬๑⇧⇧๑▬▬▬▬▬●`
+		
     }
   },
 

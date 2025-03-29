@@ -11,7 +11,7 @@ module.exports = {
 		version: "1.1",
 		author: "SiAM",
 		countDown: 5,
-		category: "Utility",
+		category: "support",
     role: 0,
     guide: {
       en: "{pn} Your <message for admin> "

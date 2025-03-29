@@ -32,12 +32,17 @@ module.exports = {
 			syntaxError: "Sai cú pháp, chỉ có thể dùng {pn} on hoặc {pn} off"
 		},
 		en: {
-			turnedOn: "Turned on the mode only admin of group can use bot",
-			turnedOff: "Turned off the mode only admin of group can use bot",
-			turnedOnNoti: "Turned on the notification when user is not admin of group use bot",
-			turnedOffNoti: "Turned off the notification when user is not admin of group use bot",
-			syntaxError: "Syntax error, only use {pn} on or {pn} off"
-		}
+			turnedOn: "\n┏━━━━━━━━━━━━━━🔒━━━━━━━━━━━━━━┓\n┃ ✅ **𝐌𝐨𝐝𝐞 𝐀𝐜𝐭𝐢𝐯𝐚𝐭𝐞𝐝:** Only **𝐀𝐝𝐦𝐢𝐧𝐬** of the group can use the bot.\n┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛",
+			
+			turnedOff: "\n┏━━━━━━━━━━━━━━🔓━━━━━━━━━━━━━━┓\n┃ ❎ **𝐌𝐨𝐝𝐞 𝐃𝐞𝐚𝐜𝐭𝐢𝐯𝐚𝐭𝐞𝐝:** All members can use the bot.\n┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛",
+			
+			turnedOnNoti: "\n┏━━━━━━━━━━━━━━🔔━━━━━━━━━━━━━━┓\n┃ ✅ **𝐍𝐨𝐭𝐢𝐟𝐢𝐜𝐚𝐭𝐢𝐨𝐧 𝐀𝐜𝐭𝐢𝐯𝐚𝐭𝐞𝐝:** Alert when a non-admin tries to use the bot.\n┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛",
+			
+			turnedOffNoti: "\n┏━━━━━━━━━━━━━━🔕━━━━━━━━━━━━━━┓\n┃ ❎ **𝐍𝐨𝐭𝐢𝐟𝐢𝐜𝐚𝐭𝐢𝐨𝐧 𝐃𝐞𝐚𝐜𝐭𝐢𝐯𝐚𝐭𝐞𝐝:** No alerts for non-admin bot usage.\n┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛",
+			
+			syntaxError: "\n┏━━━━━━━━━━━━━━🚫━━━━━━━━━━━━━━┓\n┃ ⚠️ **𝐒𝐲𝐧𝐭𝐚𝐱 𝐄𝐫𝐫𝐨𝐫:** Please use **{pn} on** or **{pn} off** only.\n┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛"
+		      }
+		      
 	},
 
 	onStart: async function ({ args, message, event, threadsData, getLang }) {

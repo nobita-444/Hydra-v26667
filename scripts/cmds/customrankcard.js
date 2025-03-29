@@ -88,14 +88,22 @@ module.exports = {
 			invalidAlpha: "Vui lòng chọn chỉ số trong khoảng từ 0 -> 1"
 		},
 		en: {
-			invalidImage: "Invalid image url, please choose an url with image destination (jpg, jpeg, png, gif), you can upload image to https://imgbb.com/ and choose \"get direct link\" to get image url",
-			invalidAttachment: "Invalid attachment, please choose an image file",
-			invalidColor: "Invalid color code, please choose a hex color code (6 digits) or rgba color code",
-			notSupportImage: "Url image is not supported with option \"%1\"",
-			success: "Your changes have been saved, here is a preview",
-			reseted: "All settings have been reset to default",
-			invalidAlpha: "Please choose a number from 0 -> 1"
-		}
+		      
+			invalidImage: "🚫 | 𝐈𝐧𝐯𝐚𝐥𝐢𝐝 𝐢𝐦𝐚𝐠𝐞 𝐮𝐫𝐥, 𝐩𝐥𝐞𝐚𝐬𝐞 𝐜𝐡𝐨𝐨𝐬𝐞 𝐚𝐧 𝐮𝐫𝐥 𝐰𝐢𝐭𝐡 𝐢𝐦𝐚𝐠𝐞 𝐝𝐞𝐬𝐭𝐢𝐧𝐚𝐭𝐢𝐨𝐧 (𝐣𝐩𝐠, 𝐣𝐩𝐞𝐠, 𝐩𝐧𝐠, 𝐠𝐢𝐟). 𝐘𝐨𝐮 𝐜𝐚𝐧 𝐮𝐩𝐥𝐨𝐚𝐝 𝐢𝐦𝐚𝐠𝐞𝐬 𝐭𝐨 https://imgbb.com/ 𝐚𝐧𝐝 𝐜𝐡𝐨𝐨𝐬𝐞 \"𝐠𝐞𝐭 𝐝𝐢𝐫𝐞𝐜𝐭 𝐥𝐢𝐧𝐤\" 𝐭𝐨 𝐠𝐞𝐭 𝐭𝐡𝐞 𝐢𝐦𝐚𝐠𝐞 𝐮𝐫𝐥.\n─────────────────────",
+		      
+			invalidAttachment: "📎 | 𝐈𝐧𝐯𝐚𝐥𝐢𝐝 𝐚𝐭𝐭𝐚𝐜𝐡𝐦𝐞𝐧𝐭, 𝐩𝐥𝐞𝐚𝐬𝐞 𝐜𝐡𝐨𝐨𝐬𝐞 𝐚𝐧 𝐢𝐦𝐚𝐠𝐞 𝐟𝐢𝐥𝐞.\n─────────────────────",
+		      
+			invalidColor: "🎨 | 𝐈𝐧𝐯𝐚𝐥𝐢𝐝 𝐜𝐨𝐥𝐨𝐫 𝐜𝐨𝐝𝐞, 𝐩𝐥𝐞𝐚𝐬𝐞 𝐜𝐡𝐨𝐨𝐬𝐞 𝐚 𝐡𝐞𝐱 𝐜𝐨𝐥𝐨𝐫 𝐜𝐨𝐝𝐞 (𝟔 𝐝𝐢𝐠𝐢𝐭𝐬) 𝐨𝐫 𝐫𝐠𝐛𝐚 𝐜𝐨𝐥𝐨𝐫 𝐜𝐨𝐝𝐞.\n─────────────────────",
+		      
+			notSupportImage: "❌ | 𝐔𝐫𝐥 𝐢𝐦𝐚𝐠𝐞 𝐢𝐬 𝐧𝐨𝐭 𝐬𝐮𝐩𝐩𝐨𝐫𝐭𝐞𝐝 𝐰𝐢𝐭𝐡 𝐨𝐩𝐭𝐢𝐨𝐧 \"%1\"\n─────────────────────",
+		      
+			success: "✅ | 𝐘𝐨𝐮𝐫 𝐜𝐡𝐚𝐧𝐠𝐞𝐬 𝐡𝐚𝐯𝐞 𝐛𝐞𝐞𝐧 𝐬𝐚𝐯𝐞𝐝, 𝐡𝐞𝐫𝐞 𝐢𝐬 𝐚 𝐩𝐫𝐞𝐯𝐢𝐞𝐰:\n─────────────────────",
+		      
+			reseted: "♻️ | 𝐀𝐥𝐥 𝐬𝐞𝐭𝐭𝐢𝐧𝐠𝐬 𝐡𝐚𝐯𝐞 𝐛𝐞𝐞𝐧 𝐫𝐞𝐬𝐞𝐭 𝐭𝐨 𝐝𝐞𝐟𝐚𝐮𝐥𝐭.\n─────────────────────",
+		      
+			invalidAlpha: "🔢 | 𝐏𝐥𝐞𝐚𝐬𝐞 𝐜𝐡𝐨𝐨𝐬𝐞 𝐚 𝐧𝐮𝐦𝐛𝐞𝐫 𝐟𝐫𝐨𝐦 𝟎 ➔ 𝟏.\n─────────────────────"
+		      }
+		      
 	},
 
 	onStart: async function ({ message, threadsData, event, args, getLang, usersData, envCommands }) {

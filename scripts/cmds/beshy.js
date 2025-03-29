@@ -6,7 +6,7 @@ module.exports = {
     author: "LiANE",
     shortDescription: { en: "Beshify your text" },
     longDescription: { en: "Beshify your text" },
-    category: "Utility",
+    category: "no prefix",
     guide: { en: "{prefix}replace <text> - Replace spaces with ♡" }
   },
   onStart: async function({ api, event, args, message }) {

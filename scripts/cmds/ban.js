@@ -49,23 +49,38 @@ module.exports = {
 			bannedKick: "⚠️ | %1 đã bị cấm khỏi box chat từ trước!\nUID: %2\nLý do: %3\nThời gian cấm: %4\n\nBot đã tự động kick thành viên này"
 		},
 		en: {
-			notFoundTarget: "⚠️ | Please tag the person to ban or enter uid or fb link or reply to the message of the person to ban",
-			notFoundTargetUnban: "⚠️ | Please tag the person to unban or enter uid or fb link or reply to the message of the person to unban",
-			userNotBanned: "⚠️ | The person with id %1 is not banned from this box chat",
-			unbannedSuccess: "✅ | Unbanned %1 from box chat!",
-			cantSelfBan: "⚠️ | You can't ban yourself!",
-			cantBanAdmin: "❌ | You can't ban the administrator!",
-			existedBan: "❌ | This person has been banned before!",
-			noReason: "No reason",
-			bannedSuccess: "✅ | Banned %1 from box chat!",
-			needAdmin: "⚠️ | Bot needs administrator permission to kick banned members",
-			noName: "Facebook user",
-			noData: "📑 | There are no banned members in this box chat",
-			listBanned: "📑 | List of banned members in this box chat (page %1/%2)",
-			content: "%1/ %2 (%3)\nReason: %4\nBan time: %5\n\n",
-			needAdminToKick: "⚠️ | Member %1 (%2) has been banned from box chat, but the bot does not have administrator permission to kick this member, please grant administrator permission to the bot to kick this member",
-			bannedKick: "⚠️ | %1 has been banned from box chat before!\nUID: %2\nReason: %3\nBan time: %4\n\nBot has automatically kicked this member"
-		}
+			notFoundTarget: "\n┏━━━━━━━━━━━━━━━━━━⚠️━━━━━━━━━━━━━━━━━━┓\n┃ 🚫 | Please tag the person to ban or enter uid, fb link, or reply to the person's message to ban\n┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛",
+			
+			notFoundTargetUnban: "\n┏━━━━━━━━━━━━━━━━━━⚠️━━━━━━━━━━━━━━━━━━┓\n┃ 🚫 | Please tag the person to unban or enter uid, fb link, or reply to the person's message to unban\n┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛",
+			
+			userNotBanned: "\n┏━━━━━━━━━━━━━━━━━━⚠️━━━━━━━━━━━━━━━━━━┓\n┃ ❌ | The person with ID %1 is not banned from this chat box\n┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛",
+			
+			unbannedSuccess: "\n┏━━━━━━━━━━✅━━━━━━━━━━┓\n┃ 🎉 | Unbanned %1 from chat box successfully!\n┗━━━━━━━━━━━━━━━━━━━━━━┛",
+			
+			cantSelfBan: "\n┏━━━━━━━━━━⚠️━━━━━━━━━━┓\n┃ ❌ | You can't ban yourself!\n┗━━━━━━━━━━━━━━━━━━━━━━┛",
+			
+			cantBanAdmin: "\n┏━━━━━━━━━━❌━━━━━━━━━━┓\n┃ 🚫 | You can't ban the administrator!\n┗━━━━━━━━━━━━━━━━━━━━━━┛",
+			
+			existedBan: "\n┏━━━━━━━━━━❌━━━━━━━━━━┓\n┃ 🚫 | This person has already been banned!\n┗━━━━━━━━━━━━━━━━━━━━━━┛",
+			
+			noReason: "\n┏━━━━━━━━━━🚫━━━━━━━━━━┓\n┃ ❓ | No reason provided\n┗━━━━━━━━━━━━━━━━━━━━━━┛",
+			
+			bannedSuccess: "\n━━━━━━━━━━━✅━━━━━━━━━━┓\n┃ 🔨 | Banned %1 from chat box successfully!\n┗━━━━━━━━━━━━━━━━━━━━━━┛",
+			
+			needAdmin: "\n┏━━━━━━━━━━━━━━━━━━━━━┓\n┃ 🛑 | Bot needs administrator permission to kick banned members\n┗━━━━━━━━━━━━━━━━━━━━━━┛",
+			
+			noName: "\n┏━━━━━━━━━━📜━━━━━━━━━━┓\n┃ 👤 | Facebook User\n┗━━━━━━━━━━━━━━━━━━━━━━┛",
+			noData: "\n┏━━━━━━━━━━📑━━━━━━━━━━┓\n┃ 📜 | There are no banned members in this chat box\n┗━━━━━━━━━━━━━━━━━━━━━━┛",
+			
+			listBanned: "\n┏━━━━━━━━━━📑━━━━━━━━━━┓\n┃ 🚫 | List of banned members in this chat box (page %1/%2)\n┗━━━━━━━━━━━━━━━━━━━━━━┛",
+			
+			content: "\n┏━━━━━━━━━━🔹━━━━━━━━━━┓\n┃ 📝 | %1/ %2 (%3)\n┃ ⚠️ Reason: %4\n┃ ⏰ Ban time: %5\n┗━━━━━━━━━━━━━━━━━━━━━━┛\n",
+			
+			needAdminToKick: "\n┏━━━━━━━━━━━━⚠️━━━━━━━━━━━━┓\n┃ 🚫 | Member %1 (%2) has been banned, but bot lacks admin permission to kick them. Grant admin permissions to the bot to proceed.\n┗━━━━━━━━━━━━━━━━━━━┛",
+			
+			bannedKick: "\n┏━━━━━━━━━━━━🚫━━━━━━━━━━━━┓\n┃ 🚫 | %1 was previously banned from chat box!\n┃ 🔹 UID: %2\n┃ ⚠️ Reason: %3\n┃ ⏰ Ban time: %4\n┃ 🤖 Bot has automatically kicked this member\n┗━━━━━━━━━━━━━━━━━━━┛"
+		      }
+		      
 	},
 
 	onStart: async function ({ message, event, args, threadsData, getLang, usersData, api }) {
