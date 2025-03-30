@@ -63,22 +63,22 @@ module.exports = {
 			
 			existedBan: "\n┏━━━━━━━━━━❌━━━━━━━━━━┓\n┃ 🚫 | This person has already been banned!\n┗━━━━━━━━━━━━━━━━━━━━━━┛",
 			
-			noReason: "\n┏━━━━━━━━━━🚫━━━━━━━━━━┓\n┃ ❓ | No reason provided\n┗━━━━━━━━━━━━━━━━━━━━━━┛",
+			noReason: "\n┏━━━━━━━🚫━━━━━━━━━━┓\n┃ ❓ | No reason provided\n┗━━━━━━━━━━━━━━━━━━━━━━┛",
 			
-			bannedSuccess: "\n━━━━━━━━━━━✅━━━━━━━━━━┓\n┃ 🔨 | Banned %1 from chat box successfully!\n┗━━━━━━━━━━━━━━━━━━━━━━┛",
+			bannedSuccess: "\n━━━━━━━━✅━━━━━━━━━━┓\n┃ 🔨 | Banned %1 from chat box successfully!\n┗━━━━━━━━━━━━━━━━━━━━━━┛",
 			
-			needAdmin: "\n┏━━━━━━━━━━━━━━━━━━━━━┓\n┃ 🛑 | Bot needs administrator permission to kick banned members\n┗━━━━━━━━━━━━━━━━━━━━━━┛",
+			needAdmin: "\n┏━━━━━━━━━━━━━━━━━━┓\n┃ 🛑 | Bot needs administrator permission to kick banned members\n┗━━━━━━━━━━━━━━━━━━━━━━┛",
 			
-			noName: "\n┏━━━━━━━━━━📜━━━━━━━━━━┓\n┃ 👤 | Facebook User\n┗━━━━━━━━━━━━━━━━━━━━━━┛",
-			noData: "\n┏━━━━━━━━━━📑━━━━━━━━━━┓\n┃ 📜 | There are no banned members in this chat box\n┗━━━━━━━━━━━━━━━━━━━━━━┛",
+			noName: "\n┏━━━━━━━📜━━━━━━━┓\n┃ 👤 | Facebook User\n┗━━━━━━━━━━━━━━━━━━━━━━┛",
+			noData: "\n┏━━━━━━━📑━━━━━━━┓\n┃ 📜 | There are no banned members in this chat box\n┗━━━━━━━━━━━━━━━━━━━━━━┛",
 			
-			listBanned: "\n┏━━━━━━━━━━📑━━━━━━━━━━┓\n┃ 🚫 | List of banned members in this chat box (page %1/%2)\n┗━━━━━━━━━━━━━━━━━━━━━━┛",
+			listBanned: "\n┏━━━━━━━📑━━━━━━━┓\n┃ 🚫 | List of banned members in this chat box (page %1/%2)\n┗━━━━━━━━━━━━━━━━━━━━━━┛",
 			
-			content: "\n┏━━━━━━━━━━🔹━━━━━━━━━━┓\n┃ 📝 | %1/ %2 (%3)\n┃ ⚠️ Reason: %4\n┃ ⏰ Ban time: %5\n┗━━━━━━━━━━━━━━━━━━━━━━┛\n",
+			content: "\n┏━━━━━━━🔹━━━━━━━┓\n┃ 📝 | %1/ %2 (%3)\n┃ ⚠️ Reason: %4\n┃ ⏰ Ban time: %5\n┗━━━━━━━━━━━━━━━━━━━━━━┛\n",
 			
-			needAdminToKick: "\n┏━━━━━━━━━━━━⚠️━━━━━━━━━━━━┓\n┃ 🚫 | Member %1 (%2) has been banned, but bot lacks admin permission to kick them. Grant admin permissions to the bot to proceed.\n┗━━━━━━━━━━━━━━━━━━━┛",
+			needAdminToKick: "\n┏━━━━━━━━━⚠️━━━━━━━━━┓\n┃ 🚫 | Member %1 (%2) has been banned, but bot lacks admin permission to kick them. Grant admin permissions to the bot to proceed.\n┗━━━━━━━━━━━━━━━━━━━┛",
 			
-			bannedKick: "\n┏━━━━━━━━━━━━🚫━━━━━━━━━━━━┓\n┃ 🚫 | %1 was previously banned from chat box!\n┃ 🔹 UID: %2\n┃ ⚠️ Reason: %3\n┃ ⏰ Ban time: %4\n┃ 🤖 Bot has automatically kicked this member\n┗━━━━━━━━━━━━━━━━━━━┛"
+			bannedKick: "\n┏━━━━━━━━━🚫━━━━━━━━━┓\n┃ 🚫 | %1 was previously banned from chat box!\n┃ 🔹 UID: %2\n┃ ⚠️ Reason: %3\n┃ ⏰ Ban time: %4\n┃ 🤖 Bot has automatically kicked this member\n┗━━━━━━━━━━━━━━━━━━━┛"
 		      }
 		      
 	},

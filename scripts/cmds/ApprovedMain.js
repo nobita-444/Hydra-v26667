@@ -7,7 +7,8 @@ module.exports = {
     version: "1.0",
     author: "Samuel Kâñèñgeè",
     countDown: 5,
-    category:"owner",
+    category:"admin-tools",
+    guide:"{pn} approve <threadID> <message>\n{pn} remove <threadID> <reason>\n{pn} disapproved <threadID> <reason>\n{pn} check",
     role: 2
   },
 

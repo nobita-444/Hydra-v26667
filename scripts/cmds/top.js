@@ -52,7 +52,7 @@ module.exports = {
 		);
 
 		// Send the formatted leaderboard
-		const messageText = `🏆 **Top 100 Richest Users:**\n\n${topUsersList.join('\n')}`;
+		const messageText = `🏆 Top 100 Richest Users:\n\n${topUsersList.join('\n')}`;
 		message.reply(messageText);
 	}
 }; 
