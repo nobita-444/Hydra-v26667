@@ -1,7 +1,7 @@
 module.exports = {
 	config: {
 		name: "girl",
-		aliases: ["girl"],
+		aliases: ["gir0"],
 		version: "1.0",
 		author: "Doru fix by kivv",
 		countDown: 5,

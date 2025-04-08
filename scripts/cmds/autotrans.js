@@ -2,10 +2,11 @@ const axios = require("axios");
 
 module.exports = {
   config: {
-    name: "bangali",
+    name: "bangla",
+    aliases: ["bn", "transbn"],
     version: "1.0.1",
     hasPermssion: 0,
-    credits: "𝐏𝐫𝐢𝐲𝐚𝐧𝐬𝐡 𝐑𝐚𝐣𝐩𝐮𝐭",
+    credits: "𝐏𝐫𝐢𝐲𝐚𝐧𝐬𝐡 𝐑𝐚𝐣𝐩𝐮𝐭(modify by Xrotick)",
     description: "Text translation",
     category: "media",
     usages: "{pn} [text] -> [language]",
