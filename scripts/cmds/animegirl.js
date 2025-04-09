@@ -9,64 +9,49 @@ module.exports = {
         countDown: 5,
         role: 0,
         shortDescription: {
-            en: "Generate high-quality anime images based on tags [NSFW Available]",
+            en: "Generate high quality anime image based on tag [NSFW Available]",
         },
         longDescription: {
             en: "This command generates a high-quality anime image based on user input tags.",
         },
-        category: "image",
+        category: "Fun",
         guide: {
             en: "Usage: {pn} <tag>\nTags: \n\nmaid, waifu, marin-kitagawa, mori-calliope, raiden-shogun, oppai, selfies, uniform\nNSFW: ass, hentai, milf, oral, paizuri, ecchi, ero.",
         }
     },
 
-    onStart: async function ({ message, args }) {
+    onStart: async function ({ api, args, message, event }) {
         const availableTags = [
-            "maid", "waifu", "marin-kitagawa", "mori-calliope", 
-            "raiden-shogun", "oppai", "selfies", "uniform",
-            "ass", "hentai", "milf", "oral", "paizuri", "ecchi", "ero"
+            "maid", "waifu", "marin-kitagawa", "mori-calliope", "raiden-shogun", 
+            "oppai", "selfies", "uniform", "ass", "hentai", "milf", "oral", 
+            "paizuri", "ecchi", "ero"
         ];
 
         const tag = args[0];
-        if (!tag) {
+
+        if (!availableTags.includes(tag)) {
             return message.reply(
-                "❌ | Please specify a tag!\n\nAvailable Tags:\n\n✨ SFW: maid, waifu, marin-kitagawa, mori-calliope, raiden-shogun, oppai, selfies, uniform\n🔞 NSFW: ass, hentai, milf, oral, paizuri, ecchi, ero."
+                `Invalid Tag ${tag}. ⚠️\nPlease use: maid, waifu, marin-kitagawa, mori-calliope, raiden-shogun, oppai, selfies, uniform.\n\nNSFW: ass, hentai, milf, oral, paizuri, ecchi, ero.`
             );
         }
 
-        if (!availableTags.includes(tag.toLowerCase())) {
-            return message.reply(
-                `⚠️ | Invalid Tag: ${tag}\n\nAvailable Tags:\n\n✨ SFW: maid, waifu, marin-kitagawa, mori-calliope, raiden-shogun, oppai, selfies, uniform\n🔞 NSFW: ass, hentai, milf, oral, paizuri, ecchi, ero.`
-            );
+        const response = await fetch(`https://api.waifu.im/search/?included_tags=${tag}`);
+
+        if (response.status !== 200) {
+            return message.reply("Failed to get image.");
         }
 
-        try {
-            const response = await fetch(`https://api.waifu.im/search/?included_tags=${tag}`);
-            if (response.status !== 200) {
-                return message.reply("❌ | Failed to retrieve the image. Please try again.");
-            }
+        const data = await response.json();
+        const image = data.images[0];
 
-            const data = await response.json();
-            const image = data.images[0];
+        const imageResponse = await fetch(image.url);
+        const buffer = await imageResponse.buffer();
 
-            if (!image) {
-                return message.reply("⚠️ | No image found for the given tag.");
-            }
+        fs.writeFileSync(`${tag}_anime.jpg`, buffer);
 
-            const imageResponse = await fetch(image.url);
-            const buffer = await imageResponse.buffer();
-
-            const filePath = `${tag}_anime.jpg`;
-            fs.writeFileSync(filePath, buffer);
-
-            await message.reply({
-                body: `\n┏━━━━━━💭━━━━━━┓\n┃ 😌 𝐇𝐨𝐰 𝐢𝐬 𝐬𝐡𝐞?\n┃ 🏷 𝐈𝐦𝐚𝐠𝐞 𝐓𝐚𝐠: ${tag} 😌🥵\n┗━━━━━━━━━━━━━━━┛`,
-                attachment: fs.createReadStream(filePath)
-            });
-
-            fs.unlinkSync(filePath);
-        } catch (error) {
-            message.reply("❌ | An error occurred while fetching the image.");
-        }
+        message.reply({
+            body: `How is she? 😌\nImage Tag: ${tag} 😌🥵`,
+            attachment: fs.createReadStream(`${tag}_anime.jpg`)
+        }, () => fs.unlinkSync(`${tag}_anime.jpg`));
     }
 };
