@@ -2,8 +2,8 @@ const os = require("os");
 
 module.exports = {
   config: {
-    name: "up8",
-    version: "4.0-up7",
+    name: "up2",
+    version: "4.0-up2",
     author: "Amit⚡Max | Mod by Xrotick",
     role: 0,
     shortDescription: { en: "Stylish uptime with loading animation" },
